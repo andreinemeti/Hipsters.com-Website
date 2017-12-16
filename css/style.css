@@ -200,9 +200,6 @@ footer {
 }
 
 
-
-
-
 /*Media Queries*/
 
 @media only screen and (max-width: 568px) {
@@ -212,6 +209,7 @@ footer {
 
     #contact form {
         width: 90%;
+        margin-bottom:20px;
     }
     .cover {
         padding-top: 60px;
