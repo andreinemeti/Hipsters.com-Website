@@ -1,0 +1,246 @@
+html,
+body,
+.cover {
+    height: 100%;
+    /*we want to cover to be 100% of the body*/
+    background: #F2F2ED;
+}
+
+body {
+    position: relative;
+}
+
+
+
+.cover {
+    background: url("../img/background-min.jpg") center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    /*this has to be set to table in order for the text to be always vertically aligned*/
+    position: relative;
+    align-items: center;
+    width: 100%;
+    box-shadow: inset 0 0 100px #000;
+    /*makes the box shadow inside the box*/
+    padding: 0 10%;
+}
+
+.cover-text {
+    margin-top: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+}
+
+.cover-text h1 {
+    margin: 0;
+    font-size: 70px;
+    letter-spacing: -3px;
+}
+
+nav.navbar-inverse {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+.cta {
+    margin-top: 30px;
+}
+
+
+.testimonial {
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+blockquote {
+
+    border: none;
+    margin: 0;
+    font-family: Georgia, Times, serif;
+    font-style: italic;
+    font-size: 23px;
+    padding: 0 20px;
+    color: white;
+}
+
+blockquote cite {
+    display: block;
+    /*goes to a new line*/
+    text-align: right;
+    text-transform: uppercase;
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: bold;
+    color: #888;
+    margin-top: 40px;
+}
+
+section {
+
+    padding: 100px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 68px 0;
+}
+
+h2+p {
+    /*siblings selector*/
+    /*only paragraph tags that are on the right*/
+    text-align: center;
+    margin-top: -60px;
+}
+
+#team {
+    background: url("http://modestowebdesigns.com/wp-content/uploads/2014/09/website-design-slider-background-stockton.jpg") center no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.box-shadow {
+    min-height: 350px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, .3), 0 15px 12px rgba(0, 0, 0, .1);
+    margin-bottom: 20px;
+}
+
+header {
+    margin-top: 20px;
+    height: 140px;
+}
+
+header.first {
+    background: url("http://bibrent.com/wp-content/uploads/2016/01/Background-Picture3-600x300.png");
+    background-size: cover;
+}
+
+header.second {
+    background: url("https://www3.lenovo.com/medias/homepage-background-thinkpad-pab-mobile.jpg?context=bWFzdGVyfHJvb3R8NTQyNzh8aW1hZ2UvanBlZ3xoMTgvaGUyLzk2MTE5NTU5MjkxMTguanBnfDUyZmFhZDQxYmU3MGQwNGQyNDZiNjUyZDc1YmQ3Nzc5NDBlZDI1ODcwZmNiZjE5MWZhMmU5MzUxZjkxMzNhMDk");
+    background-size: cover;
+}
+
+header.third {
+    background: url("https://www.village-hotels.co.uk/media/1711/_o8a0124-edit.jpg?format=jpg&width=600&quality=95");
+    background-size: cover;
+}
+
+.box-shadow footer {
+    margin-bottom: 10px;
+}
+
+.box-shadow footer a {
+    text-decoration: none;
+}
+
+#contact {
+    background: #F2F2ED;
+}
+
+
+#contact form {
+    width: 300px;
+    margin: 0 auto -40px auto;
+}
+
+#contact textarea {
+    resize: none
+}
+
+#contact form input,
+#contact form textarea {
+    background: transparent;
+}
+
+
+.glyphicon {
+    text-align: center;
+    display: block;
+    margin: 10px 0 0 0;
+    font-size: 40px;
+}
+
+.glyphicon:hover {
+    color: red;
+}
+
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Georgia, Times, serif;
+}
+
+#credits a {
+    color: hotpink;
+    text-decoration: none;
+}
+
+#credits .fa {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+#credits .fa:hover {
+    filter: brightness(.8);
+}
+
+
+
+
+
+/*Media Queries*/
+
+@media only screen and (max-width: 568px) {
+    blockquote {
+        font-size: 20px;
+    }
+
+    #contact form {
+        width: 90%;
+    }
+    .cover {
+        padding-top: 60px;
+    }
+    .cover h1 {
+        font-size: 40px;
+    }
+    section {
+        padding: 20px 0;
+    }
+
+    .form-control.input-lg::placeholder {
+        font-size: 1.4rem;
+    }
+
+    .input-group {
+        margin: 0 auto;
+    }
+    .input-group-btn {
+        display: inline-block;
+        width: 100%;
+    }
+    .input-group-btn button {
+        width: 100%;
+    }
+
+    #signup h2 {
+        font-size: 2.3rem;
+
+        width: 100%;
+    }
+}
